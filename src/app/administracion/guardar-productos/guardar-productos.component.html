@@ -1,0 +1,39 @@
+<app-barra-navegacion></app-barra-navegacion>
+<div class="container-fluid contenedor-guardar-productos">
+    <div class="row fila-guardar-productos">
+        <div class=" col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 columna-guardar-productos">
+            <form class="formulario-guardar-productos" [formGroup]="productoForm" (ngSubmit)="guardarProducto()">
+                <fieldset class="fieldset-campos-formulario">
+                    <legend id="leyenda-nombre-formulario">Formulario Productos</legend>
+                    <label class="etiqueta-categoria-producto">Categoría producto</label>
+                    <input type="text" id="input-categoria-producto" class="input-form-control"
+                        placeholder="Ingresa categoria producto" formControlName="categoriaProducto">
+                    <label class="etiqueta-categoria-producto">Nombre producto</label>
+                    <input type="text" id="input-nombre-producto" class="input-form-control"
+                        placeholder="Ingresa nombre producto" formControlName="nombreProducto">
+                    <label class="etiqueta-categoria-producto">Tamaño producto</label>
+                    <input type="text" id="input-tamano-producto" class="input-form-control"
+                        placeholder="Ingresa tamaño producto" formControlName="tamanoProducto">
+                    <label class="etiqueta-categoria-producto">Precio producto</label>
+                    <input type="text" id="input-precio-producto" class="input-form-control"
+                        placeholder="Ingresa precio producto" formControlName="precioProducto">
+                    <label class="etiqueta-categoria-producto">Color producto</label>
+                    <input type="text" id="input-color-producto" class="input-form-control"
+                        placeholder="Ingresa color producto" formControlName="colorProducto">
+                    <label class="etiqueta-categoria-producto">Cantidad producto</label>
+                    <input type="text" id="input-cantidad-producto" class="input-form-control"
+                        placeholder="Ingresa cantidad producto" formControlName="cantidadProducto">
+                    <label class="etiqueta-categoria-producto">Imagen producto</label>
+                    <input type="file" id="input-imagen-producto" class="input-form-control"
+                        placeholder="Ingresa imagen producto" (change)="onArchivoSeleccionado($event)">
+                </fieldset>
+                <fieldset class="fieldset-boton-formulario">
+                    <button type="submit" class="btn btn-lg btn-primary formulario-login-boton"
+                        [disabled]="!productoForm.valid || !archivoSeleccionado">
+                        Enviar
+                    </button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

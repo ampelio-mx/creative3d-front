@@ -1,0 +1,873 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor-home-landing-page {
+
+  .fila-home-landing-page {
+
+    //COLUMNA IMAGEN PRINCIPAL
+    .columna-home-landing-page {
+      height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+      background-size: 20px 20px;
+      box-shadow: inset 5px 5px 20px 5px rgba(255, 255, 255, 0.9),
+        inset -5px -5px 20px 5px rgba(255, 255, 255, 0.9);
+
+      .conte-imagen-fondo {
+        width: 95%;
+        height: 90%;
+        background-image: url(./../../../assets/imagenes/background_home.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+      }
+    }
+
+    //COLUMNA FORMULARIO
+    .columna-home-formulario-contacto {
+
+      height: 85vh;
+      background-color: rgb(155, 155, 155);
+      background-image: linear-gradient(90deg, rgba(179, 179, 179, 1) 1px, transparent 1px),
+        linear-gradient(rgba(179, 179, 179, 1) 1px, transparent 1px);
+      background-size: 20px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 1px, transparent 1px),
+          linear-gradient(rgba(0, 0, 0, 0.3) 1px, transparent 1px);
+        background-size: 100px 100px;
+        z-index: 1;
+        pointer-events: none;
+        box-shadow: inset 5px 5px 50px 10px rgba(255, 255, 255, 0.4),
+          inset -5px -5px 50px 10px rgba(255, 255, 255, 0.4);
+      }
+
+      .formulario-contacto {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 1);
+        border-radius: 0px;
+        z-index: 1;
+
+        .formulario-contacto-fieldset-campos {
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 20vw;
+          height: 40vh;
+          font-size: 0.5px;
+
+
+          #formulario-contacto-legend {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 20vw;
+            height: 10vh;
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 2vh;
+            color: rgb(75, 111, 164);
+            -webkit-text-stroke: 0.3px rgba(255, 255, 255, 0.9);
+            text-shadow: 1px 3px rgba(0, 0, 0, 0.5);
+            letter-spacing: -2px;
+
+          }
+
+          .formulario-login-input {
+            border: 1px solid rgb(255, 255, 255);
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0.1em 0.1em 0.5em 0em rgba(255, 255, 255, 0.5), inset -0.1em -0.1em 0.5em 0em rgba(255, 255, 255, 0.5);
+            border-radius: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 16vw;
+            height: 3vh;
+            font-size: 16px;
+            margin-bottom: 0;
+          }
+
+          .formulario-contacto-mensaje-input {
+            border: 1px solid rgb(255, 255, 255);
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0.1em 0.1em 0.7em 0em rgba(255, 255, 255, 0.5), inset -0.1em -0.1em 0.7em 0em rgba(255, 255, 255, 0.5);
+            border-radius: 5px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 16vw;
+            height: 9vh;
+            font-size: 16px;
+            margin-bottom: 0;
+
+          }
+
+          .formulario-login-conte-parrafo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 16vw;
+            height: 2.5vh;
+            color: rgb(255, 255, 255);
+
+            .formulario-login-parrafo {
+              width: 16vw;
+              height: 2.5vh;
+              font-size: 12px;
+              text-align: center;
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        .formulario-contacto-fieldset-botones {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 20vw;
+          height: 10vh;
+          font-size: 0.1px;
+
+          .formulario-login-boton {
+            width: 16vw;
+            height: 4vh;
+            background-color: rgb(211, 211, 211);
+            box-shadow: inset 0em 0.2em 0.2em 0em rgba(32, 0, 19, 0.5), inset 0em 0.3em 0.3em 0.2em rgba(44, 181, 236, 1), inset 0em 0.4em 1em 0.5em rgba(126, 243, 255, 0.5), inset 0em 0.2em 0.5em 0.4em rgb(236, 44, 226),
+              inset 0em -0.2em 0.2em 0.2em rgba(32, 0, 19, 0.7), inset 0em -0.3em 0.3em 0.2em rgba(44, 181, 236, 1), inset 0em -0.4em 1em 0.5em rgba(126, 243, 255, 0.5), inset 0em -0.2em 0.5em 0.4em rgb(236, 44, 226);
+            margin-top: 0vh;
+            margin-bottom: 0vh;
+            padding: 0;
+            border: 0.3px solid rgb(255, 255, 255);
+            border-radius: 25px;
+            font-size: 14px;
+            color: rgb(255, 255, 255);
+            -webkit-text-stroke: 0.3px rgb(0, 80, 107);
+            font-weight: bolder;
+
+          }
+
+
+          .formulario-login-boton:hover {
+
+            box-shadow: inset 0em 0.2em 0.2em 0em rgba(32, 0, 19, 0.7), inset 0em 0.3em 0.3em 0.2em rgba(44, 181, 236, 1), inset 0em 0.4em 1em 0.5em rgba(126, 243, 255, 0.5), inset 0em 0.2em 0.5em 0.4em rgb(236, 44, 226),
+              inset 0em -0.2em 0.2em 0.2em rgba(32, 0, 19, 0.9), inset 0em -0.3em 0.3em 0.2em rgba(44, 181, 236, 1), inset 0em -0.4em 1em 0.5em rgba(126, 243, 255, 0.5), inset 0em -0.2em 0.5em 0.4em rgb(236, 44, 226),
+              0.1em 0.1em 0em 0em rgba(255, 255, 255, 0.5), 0.1em 0.1em 1em 0em rgba(126, 243, 255, 0.2), 0.1em 0.1em 1.5em 0em rgba(147, 218, 255, 0.1),
+              -0.1em -0.1em 0em 0em rgba(255, 255, 255, 0.5), -0.1em -0.1em 1em 0em rgba(126, 243, 255, 0.2), -0.1em -0.1em 1.5em 0em rgba(147, 218, 255, 0.1);
+          }
+
+        }
+
+      }
+
+    }
+
+    //COLUMNA ESPACIO
+    .columna-home-espacio {
+
+      height: 5vh;
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 1px, transparent 1px),
+        linear-gradient(rgba(0, 0, 0, 0.3) 1px, transparent 1px);
+      background-size: 20px 20px;
+
+      box-shadow: inset 15px 15px 20px 5px rgba(255, 255, 255, 0.9),
+        inset -15px -20px 20px 5px rgba(255, 255, 255, 0.9);
+
+    }
+
+    //COLUMNA PORTAFOLIO
+    .columna-portafolio-cubos {
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      padding: 5% 10% 0 10%;
+
+
+      .portafolio-cubos-titulo {
+        width: 25%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(90deg, rgba(45, 45, 45, 0.1) 1px, transparent 1px),
+          linear-gradient(rgba(45, 45, 45, 0.1) 1px, transparent 1px);
+        background-size: 20px 20px;
+
+        box-shadow: inset 5px 5px 20px 5px rgba(255, 255, 255, 0.9),
+          inset -5px -5px 20px 5px rgba(255, 255, 255, 0.9);
+
+        h2 {
+          color: rgba(75, 111, 164, 1);
+          -webkit-text-stroke: 2px rgba(75, 111, 164, 1);
+          text-stroke: 2px rgba(75, 111, 164, 1);
+          font-size: 56px;
+          text-shadow: 2px 2px 2px rgb(199, 199, 199);
+
+        }
+      }
+
+      .portafolio-cubos-imagenes {
+        width: 75%;
+        height: 80vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .cubo {
+          width: 33.333%;
+          height: 40vh;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+
+          .cubo-caras {
+            width: 30vh;
+            height: 30vh;
+            position: absolute;
+            top: 2.5vh;
+          }
+
+
+          #cubo-cara-posterior {
+            background-image: linear-gradient(45deg, rgba(172, 252, 255, 0.1), rgba(172, 252, 255, 0.1), rgba(172, 252, 255, 0.1));
+            box-shadow: inset 5px 5px 40px 15px rgba(75, 111, 164, 0.1),
+              inset -10px -10px 40px 15px rgba(75, 111, 164, 0.1),
+              10px 10px 10px 2px rgba(0, 0, 0, 0.1),
+              -10px 0px 10px 2px rgba(0, 0, 0, 0.1);
+            transform: translateZ(-10vh);
+          }
+
+
+          #cubo-imagen-uno {
+            background-image: url('./../../../assets/imagenes/dart-vader.png');
+            background-size: 75%;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+          }
+
+          #cubo-imagen-dos {
+            background-image: url('./../../../assets/imagenes/maceta-removebg-preview.png');
+            background-size: 75%;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+          }
+
+          #cubo-imagen-cinco {
+            background-image: url('./../../../assets/imagenes/dart-vader.png');
+            background-size: 75%;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+          }
+
+          #cubo-imagen {
+            background-image: url('./../../../assets/imagenes/buda.gif');
+            background-size: 75%;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+          }
+
+          .cubos-etiqueta-caja {
+            width: 100%;
+            height: 5vh;
+            margin-top: 35vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .cubos-etiqueta {
+              width: 25vh;
+              height: 5vh;
+              margin-top: 2.5vh;
+              margin-bottom: 2.5vh;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              p {
+                color: rgba(75, 111, 164, 1);
+                font-size: 24px;
+                text-shadow: 0.5px 0.5px 1px rgba(255, 255, 255, 1);
+              }
+            }
+
+          }
+
+        }
+      }
+
+      .portafolio-cubos-etiquetas {
+        width: 0%;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+
+
+      }
+
+
+    }
+
+    //COLUMNA OPINIONES
+    .columna-opinion-clientes {
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+      background-size: 20px 20px;
+      box-shadow: inset 10px 10px 35px 15px rgba(255, 255, 255, 0.9),
+        inset -10px -10px 35px 15px rgba(255, 255, 255, 0.9);
+
+
+      .fila-opinion-clientes-cards {
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5% 0 5%;
+
+        .opinion-clientes-card {
+
+          width: 33.333%;
+          height: 36vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 1% 2.5% 1% 2.5%;
+          background-color: transparent;
+
+          .contenedor-sombra-card {
+            width: 50%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 3px 3px 22px 0px rgba(0, 0, 0, 0.2),
+              -3px -3px 22px 0px rgba(0, 0, 0, 0.2),
+              1px 1px 1px 0 rgba(0, 0, 0, 0.1),
+              -1px -1px 1px 0 rgba(0, 0, 0, 0.1);
+
+            .card-foto {
+              width: 100%;
+              height: 50%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              background-color: transparent;
+
+              .foto-circulo {
+                width: 15vh;
+                height: 15vh;
+                background-color: transparent;
+                background-image: url('./../../../assets/imagenes/profile_photo.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 50%;
+              }
+            }
+
+            .card-descripcion {
+              width: 100%;
+              height: 30%;
+              background-color: rgba(0, 0, 0, 0.1);
+            }
+
+            .card-nombre {
+              width: 100%;
+              height: 10%;
+              background-color: transparent;
+            }
+
+            .card-ocupacion {
+              width: 100%;
+              height: 10%;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+}
+
+@media (max-width:768px) {
+
+  .contenedor-home-landing-page {
+
+    .fila-home-landing-page {
+
+      //COLUMNA IMAGEN PRINCIPAL
+      .columna-home-landing-page {
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+          linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+        background-size: 20px 20px;
+        box-shadow: inset 5px 5px 20px 5px rgba(255, 255, 255, 0.9),
+          inset -5px -5px 20px 5px rgba(255, 255, 255, 0.9);
+
+        .conte-imagen-fondo {
+          width: 95%;
+          height: 90%;
+          background-image: url(./../../../assets/imagenes/background_home.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+
+        }
+      }
+
+      //COLUMNA FORMULARIO
+      .columna-home-formulario-contacto {
+
+        height: 45vh;
+        background-color: rgb(155, 155, 155);
+        background-image: linear-gradient(90deg, rgba(179, 179, 179, 1) 1px, transparent 1px),
+          linear-gradient(rgba(179, 179, 179, 1) 1px, transparent 1px);
+        background-size: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border: 1px solid salmon;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 1px, transparent 1px),
+            linear-gradient(rgba(0, 0, 0, 0.3) 1px, transparent 1px);
+          background-size: 100px 100px;
+          z-index: 1;
+          pointer-events: none;
+          box-shadow: inset 5px 5px 50px 10px rgba(255, 255, 255, 0.4),
+            inset -5px -5px 50px 10px rgba(255, 255, 255, 0.4);
+        }
+
+        .formulario-contacto {
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.2);
+          border: 1px solid rgba(255, 255, 255, 1);
+          border-radius: 0px;
+          z-index: 1;
+
+          .formulario-contacto-fieldset-campos {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80vw;
+            height: 40vh;
+            font-size: 0.5px;
+            border: 1px solid magenta;
+
+            #formulario-contacto-legend {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 80vw;
+              height: 10vh;
+              font-size: 48px;
+              font-weight: bold;
+              margin-bottom: 2vh;
+              color: rgb(75, 111, 164);
+              -webkit-text-stroke: 0.3px rgba(255, 255, 255, 0.9);
+              text-shadow: 1px 3px rgba(0, 0, 0, 0.5);
+              letter-spacing: -2px;
+              border: 1px solid orange;
+            }
+
+            .formulario-login-input {
+              border: 1px solid rgb(255, 255, 255);
+              background-color: rgba(255, 255, 255, 0.1);
+              box-shadow: inset 0.1em 0.1em 0.5em 0em rgba(255, 255, 255, 0.5), inset -0.1em -0.1em 0.5em 0em rgba(255, 255, 255, 0.5);
+              border-radius: 15px;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              width: 60vw;
+              height: 3vh;
+              font-size: 16px;
+              margin-bottom: 0;
+              border: 1px solid yellow;
+            }
+
+            .formulario-contacto-mensaje-input {
+              border: 1px solid rgb(255, 255, 255);
+              background-color: rgba(255, 255, 255, 0.1);
+              box-shadow: inset 0.1em 0.1em 0.7em 0em rgba(255, 255, 255, 0.5), inset -0.1em -0.1em 0.7em 0em rgba(255, 255, 255, 0.5);
+              border-radius: 5px;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              width: 60vw;
+              height: 9vh;
+              font-size: 16px;
+              margin-bottom: 0;
+              border: 1px solid blueviolet;
+            }
+
+            .formulario-login-conte-parrafo {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 60vw;
+              height: 2.5vh;
+              color: rgb(255, 255, 255);              
+              border: 1px solid blueviolet;
+              .formulario-login-parrafo {
+                width: 16vw;
+                height: 2.5vh;
+                font-size: 12px;
+                text-align: center;
+                margin-bottom: 0;
+              }
+            }
+          }
+
+          .formulario-contacto-fieldset-botones {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 20vw;
+            height: 10vh;
+            font-size: 0.1px;
+
+            .formulario-login-boton {
+              width: 40vw;
+              height: 4vh;
+              background-color: rgb(211, 211, 211);
+              box-shadow: inset 0em 0.2em 0.2em 0em rgba(32, 0, 19, 0.5), inset 0em 0.3em 0.3em 0.2em rgba(44, 181, 236, 1), inset 0em 0.4em 1em 0.5em rgba(126, 243, 255, 0.5), inset 0em 0.2em 0.5em 0.4em rgb(236, 44, 226),
+                inset 0em -0.2em 0.2em 0.2em rgba(32, 0, 19, 0.7), inset 0em -0.3em 0.3em 0.2em rgba(44, 181, 236, 1), inset 0em -0.4em 1em 0.5em rgba(126, 243, 255, 0.5), inset 0em -0.2em 0.5em 0.4em rgb(236, 44, 226);
+              margin-top: 0vh;
+              margin-bottom: 0vh;
+              padding: 0;
+              border: 0.3px solid rgb(255, 255, 255);
+              border-radius: 25px;
+              font-size: 14px;
+              color: rgb(255, 255, 255);
+              -webkit-text-stroke: 0.3px rgb(0, 80, 107);
+              font-weight: bolder;
+
+            }
+
+
+            .formulario-login-boton:hover {
+
+              box-shadow: inset 0em 0.2em 0.2em 0em rgba(32, 0, 19, 0.7), inset 0em 0.3em 0.3em 0.2em rgba(44, 181, 236, 1), inset 0em 0.4em 1em 0.5em rgba(126, 243, 255, 0.5), inset 0em 0.2em 0.5em 0.4em rgb(236, 44, 226),
+                inset 0em -0.2em 0.2em 0.2em rgba(32, 0, 19, 0.9), inset 0em -0.3em 0.3em 0.2em rgba(44, 181, 236, 1), inset 0em -0.4em 1em 0.5em rgba(126, 243, 255, 0.5), inset 0em -0.2em 0.5em 0.4em rgb(236, 44, 226),
+                0.1em 0.1em 0em 0em rgba(255, 255, 255, 0.5), 0.1em 0.1em 1em 0em rgba(126, 243, 255, 0.2), 0.1em 0.1em 1.5em 0em rgba(147, 218, 255, 0.1),
+                -0.1em -0.1em 0em 0em rgba(255, 255, 255, 0.5), -0.1em -0.1em 1em 0em rgba(126, 243, 255, 0.2), -0.1em -0.1em 1.5em 0em rgba(147, 218, 255, 0.1);
+            }
+
+          }
+
+        }
+
+      }
+
+      //COLUMNA ESPACIO
+      .columna-home-espacio {
+
+        height: 5vh;
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 1px, transparent 1px),
+          linear-gradient(rgba(0, 0, 0, 0.3) 1px, transparent 1px);
+        background-size: 20px 20px;
+
+        box-shadow: inset 15px 15px 20px 5px rgba(255, 255, 255, 0.9),
+          inset -15px -20px 20px 5px rgba(255, 255, 255, 0.9);
+
+      }
+
+      //COLUMNA PORTAFOLIO
+      .columna-portafolio-cubos {
+        display: flex;
+        flex-direction: column;//
+        padding: 5% 10% 0 10%;
+        background-color: aqua;
+
+        .portafolio-cubos-titulo {
+          width: 100%;
+          height: 10vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-image: linear-gradient(90deg, rgba(45, 45, 45, 0.1) 1px, transparent 1px),
+            linear-gradient(rgba(45, 45, 45, 0.1) 1px, transparent 1px);
+          background-size: 20px 20px;
+          box-shadow: inset 5px 5px 20px 5px rgba(255, 255, 255, 0.9),
+            inset -5px -5px 20px 5px rgba(255, 255, 255, 0.9);
+          background-color: yellow;
+
+          h2 {
+            color: rgba(75, 111, 164, 1);
+            -webkit-text-stroke: 2px rgba(75, 111, 164, 1);
+            text-stroke: 2px rgba(75, 111, 164, 1);
+            font-size: 56px;
+            text-shadow: 2px 2px 2px rgb(199, 199, 199);
+
+          }
+        }
+
+        .portafolio-cubos-imagenes {
+          width: 100%;
+          height: 90vh;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          background-color: rgb(236, 44, 226);
+
+          .cubo {
+            width: 33.333%;
+            height: 40vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+
+            .cubo-caras {
+              width: 30vh;
+              height: 30vh;
+              position: absolute;
+              top: 2.5vh;
+            }
+
+
+            #cubo-cara-posterior {
+              background-image: linear-gradient(45deg, rgba(172, 252, 255, 0.1), rgba(172, 252, 255, 0.1), rgba(172, 252, 255, 0.1));
+              box-shadow: inset 5px 5px 40px 15px rgba(75, 111, 164, 0.1),
+                inset -10px -10px 40px 15px rgba(75, 111, 164, 0.1),
+                10px 10px 10px 2px rgba(0, 0, 0, 0.1),
+                -10px 0px 10px 2px rgba(0, 0, 0, 0.1);
+              transform: translateZ(-10vh);
+            }
+
+
+            #cubo-imagen-uno {
+              background-image: url('./../../../assets/imagenes/dart-vader.png');
+              background-size: 75%;
+              background-repeat: no-repeat;
+              background-position: center;
+              border: none;
+            }
+
+            #cubo-imagen-dos {
+              background-image: url('./../../../assets/imagenes/maceta-removebg-preview.png');
+              background-size: 75%;
+              background-repeat: no-repeat;
+              background-position: center;
+              border: none;
+            }
+
+            #cubo-imagen-cinco {
+              background-image: url('./../../../assets/imagenes/dart-vader.png');
+              background-size: 75%;
+              background-repeat: no-repeat;
+              background-position: center;
+              border: none;
+            }
+
+            #cubo-imagen {
+              background-image: url('./../../../assets/imagenes/buda.gif');
+              background-size: 75%;
+              background-repeat: no-repeat;
+              background-position: center;
+              border: none;
+            }
+
+            .cubos-etiqueta-caja {
+              width: 100%;
+              height: 5vh;
+              margin-top: 35vh;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .cubos-etiqueta {
+                width: 25vh;
+                height: 5vh;
+                margin-top: 2.5vh;
+                margin-bottom: 2.5vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                  color: rgba(75, 111, 164, 1);
+                  font-size: 24px;
+                  text-shadow: 0.5px 0.5px 1px rgba(255, 255, 255, 1);
+                }
+              }
+
+            }
+
+          }
+        }
+
+        .portafolio-cubos-etiquetas {
+          width: 0%;
+          height: 10vh;
+          display: flex;
+          flex-direction: row;
+
+
+        }
+
+
+      }
+
+      //COLUMNA OPINIONES
+      .columna-opinion-clientes {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+          linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+        background-size: 20px 20px;
+        box-shadow: inset 10px 10px 35px 15px rgba(255, 255, 255, 0.9),
+          inset -10px -10px 35px 15px rgba(255, 255, 255, 0.9);
+
+
+        .fila-opinion-clientes-cards {
+          height: 50vh;
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          padding: 0 5% 0 5%;
+
+          .opinion-clientes-card {
+
+            width: 33.333%;
+            height: 36vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1% 2.5% 1% 2.5%;
+            background-color: transparent;
+
+            .contenedor-sombra-card {
+              width: 50%;
+              height: 100%;
+              background-color: rgba(255, 255, 255, 1);
+              box-shadow: 3px 3px 22px 0px rgba(0, 0, 0, 0.2),
+                -3px -3px 22px 0px rgba(0, 0, 0, 0.2),
+                1px 1px 1px 0 rgba(0, 0, 0, 0.1),
+                -1px -1px 1px 0 rgba(0, 0, 0, 0.1);
+
+              .card-foto {
+                width: 100%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+
+                .foto-circulo {
+                  width: 15vh;
+                  height: 15vh;
+                  background-color: transparent;
+                  background-image: url('./../../../assets/imagenes/profile_photo.jpg');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  border-radius: 50%;
+                }
+              }
+
+              .card-descripcion {
+                width: 100%;
+                height: 30%;
+                background-color: rgba(0, 0, 0, 0.1);
+              }
+
+              .card-nombre {
+                width: 100%;
+                height: 10%;
+                background-color: transparent;
+              }
+
+              .card-ocupacion {
+                width: 100%;
+                height: 10%;
+                background-color: transparent;
+              }
+            }
+          }
+        }
+      }
+
+
+    }
+
+  }
+}

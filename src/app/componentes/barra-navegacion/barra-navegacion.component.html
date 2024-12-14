@@ -1,0 +1,73 @@
+<div class="container-fluid contenedor-barra-cuadricula">
+    <div class="row fila-barra-cuadricula">
+        <div class="col-6 columna-barra-cuadricula-izquierda"></div>
+        <div class="col-6 columna-barra-cuadricula-derecha">
+            <!--          <div class="barra-cuadricula-derecha-boquilla"></div>-->
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid contenedor-barra-navegacion p-0">
+    <div class="row fila-barra-navegacion">
+        <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-5 col-xl-5 columna-barra columna-barra-navegacion-home">
+            <div class="barra-navegacion-home-caja-imagen">
+                <a [routerLink]="homeLink">
+                    <img src="assets/imagenes/Creative_3d_logo.png">
+                </a>
+            </div>  
+            <div class="barra-navegacion-home-caja-texto">
+                <h2>reative 3D</h2>
+            </div> 
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 columna-barra columna-barra-navegacion-menu">
+            <div class="fila-barra-menu">
+                <ul class="barra-menu-lista">
+                    <li>
+                        <a class="menu-lista-enlaces" [routerLink]="sobreNosotrosLink">Sobre nosotros</a>
+                    </li>
+                    <li>
+                        <a class="menu-lista-enlaces" [routerLink]="serviciosLink">Servicios</a>
+                    </li>
+                    <li class="lista-estilo">Tienda online
+                        <ul>
+                            <li>
+                                <a class="menu-lista-enlaces" [routerLink]="tiendaOnLineImpresorasFilamentoLink">Impresoras filamento</a>
+                            </li>
+                            <li>
+                                <a class="menu-lista-enlaces" [routerLink]="tiendaOnLineImpresorasResinaLink">Impresoras resina</a>
+                            </li>
+                            <li class="lista-estilo">Filamentos
+                                <ul>
+                                    <li>
+                                        <a class="menu-lista-enlaces" [routerLink]="tiendaOnLineFilamentosLink">PLA</a>
+                                    </li>
+                                    <li>ABS</li>
+                                    <li>PETG</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="menu-lista-enlaces" [routerLink]="tiendaOnLineResinasLink">Resinas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu-lista-enlaces" [routerLink]="">Cotización</a>
+                    <li>
+                        <a class="menu-lista-enlaces" [routerLink]="galeriaLink">Galería</a>
+                    </li>
+                    <li>
+                        <a class="menu-lista-enlaces" [routerLink]="faqLink">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-1 col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 columna-barra columna-barra-relleno-derecha">
+        </div>
+
+    </div>
+</div>

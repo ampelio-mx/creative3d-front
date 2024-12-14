@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-tienda-online-impresoras-filamento-titulo {
+
+    .fila-tienda-online-impresoras-filamento-titulo {
+        .columna-tienda-online-impresoras-filamento-titulo {
+
+            height: 10vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                font-size: 60px;
+                color: rgba(0, 95, 155, 1);
+                -webkit-text-stroke: 0.3px rgba(255, 255, 255, 1);
+                text-stroke: 0.3px rgba(255, 255, 255, 1);
+                text-shadow: 2px 1px 3px rgba(75, 75, 75, 1);
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.contenedor-tienda-online-impresoras-filamento-cards  {
+    width: 100%;
+
+    .fila-tienda-online-impresoras-filamento-cards {
+        width: 100%;
+        height: 100%;
+        .columna-tienda-online-impresoras-filamento-cards {
+            display: flex; 
+            flex-wrap: wrap;
+            padding: 0 9.5% 0 9.5%;   
+            
+        border: 1pxx solid salmon;   
+        }
+    }
+
+
+}

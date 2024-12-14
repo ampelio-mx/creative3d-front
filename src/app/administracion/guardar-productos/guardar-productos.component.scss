@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-guardar-productos {
+    .fila-guardar-productos {
+        .columna-guardar-productos {
+            height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid salmon;
+            .formulario-guardar-productos{
+                width: 25vw;
+                height: 70vh;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid greenyellow;
+                .fieldset-campos-formulario{
+                    width: 100%;
+                    height: 65vh;
+                    display: flex;
+                    flex-direction: column;
+                    border: 1px solid rgb(98, 0, 255);
+                    #leyenda-nombre-formulario{
+                        width: 100%;
+                        height: 9vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 36px;
+                        font-weight: bold;
+                        border: 1px solid salmon;
+                    }  
+                    .etiqueta-categoria-producto,.input-form-control{
+                        width: 100%;
+                        height: 4vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 18px;
+                        border: 1px solid rgb(114, 250, 114);
+                    }
+                    .input-form-control{
+                        border-radius: 50px;
+                    }
+                }
+                .fieldset-boton-formulario{
+                    width: 100%;
+                    height: 5vh;
+                    border: 1px solid red;
+                }
+            }
+        }
+    }
+}

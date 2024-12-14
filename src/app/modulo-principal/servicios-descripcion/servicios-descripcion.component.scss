@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-nuestros-servicios {
+
+    .fila-nuestros-servicios {
+
+        position: relative;
+        padding: 2% 5% 2% 5%;
+
+
+
+        //SERVICIOS DESCRIPCIÓN
+
+        .columna-servicios {
+
+            position: relative;
+            box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2),
+                -2px -2px 20px 10px rgba(0, 0, 0, 0.2);
+            padding: 1% 1% 1% 2%;
+
+            .servicios-caja-filamento,
+            .servicios-caja-resina,
+            .servicios-caja-escaneo,
+            .servicios-caja-postprocesado,
+            .servicios-caja-diseno-3d {
+                width: 100%;
+                height: 35vh;
+                display: flex;
+                flex-direction: row;
+
+                .caja-titulo {
+                    width: 30%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center; 
+                    padding-top: 2%;
+                    h2{
+                        color: rgb(0, 95, 155);
+                        -webkit-text-stroke: 0.2px rgba(255, 255, 255, 1);
+                        text-stroke: 0.2px rgba(255, 255, 255, 1);
+                        font-size: 62px;
+                        text-shadow: 2px 2px 2px rgba(75, 75, 75, 1);
+                        font-weight: bold;
+                        text-align: center;
+
+                    }
+                }
+
+                .caja-descripcion {
+                    width: 50%;
+                    height: 100%;
+                    padding: 2% 3% 2% 3%;
+
+                    p{
+                       color: black; 
+                       font-size: 20px;
+                       text-align: justify;
+                       line-height: 1.5;
+                    }
+
+                    ul li{
+                        color: black; 
+                       font-size: 20px;
+                       text-align: justify;
+                       line-height: 1.5;
+                    }
+                }
+                .caja-imagen{
+                    width: 20%;
+                    height: 100%; 
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center; 
+                    
+                    .imagen-filamento, .imagen-resina, .imagen-escaneo, .imagen-postprocesado, .imagen-diseno-3d{
+                        width: 80%;
+                        height: 80%;
+                        background-image: url('./../../../assets/imagenes/buda.gif');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    .imagen-resina{
+                        background-image: url('./../../../assets/imagenes/dart-vader.png');
+                    }
+                    .imagen-escaneo{
+                        background-image: url('./../../../assets/imagenes/dart-vader.png');
+                    }
+                    .imagen-postprocesado{
+                        background-image: url('./../../../assets/imagenes/dart-vader.png');
+                    }
+                    .imagen-diseno-3d{
+                        background-image: url('./../../../assets/imagenes/mona3d.png');
+                    }
+                }
+            }
+
+
+        }
+
+    }
+}

@@ -1,0 +1,20 @@
+<app-barra-navegacion></app-barra-navegacion>
+
+<div class="container-fluid contenedor-consulta-prospectos">
+    <div class="row fila-consulta-prospectos">
+        <div class=" col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 columna-consulta-prospectos">
+            <form class="formulario-consulta-prospectos" *ngFor="let prospecto of prospectos">
+                <label class="etiqueta-nombre">{{prospecto.nombreProspecto}}</label>
+                <label class="etiqueta-telefono">{{prospecto.telefonoProspecto}}</label>
+                <label class="etiqueta-email">{{prospecto.emailProspecto}}</label>
+                <label class="etiqueta-comentarios">{{prospecto.mensajeProspecto}}</label>
+
+                <fieldset class="formulario-contacto-fieldset-botones">
+                    <button class="btn btn-lg btn-primary formulario-login-boton"
+                        (click)="obtenerProspectos()">Consultar prospectos</button>
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+</div>

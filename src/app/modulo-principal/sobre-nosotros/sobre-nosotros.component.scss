@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-sobre-nosotros {
+
+    .fila-sobre-nosotros {
+        position: relative;
+        box-shadow: inset 100px 100px 150px 150px rgba(255, 255, 255, 0.7),
+            inset -100px -100px 150px 100px rgba(255, 255, 255, 0.7);
+
+        &::after {
+            content: '';
+            width: 90%;
+            height: 90%;
+            background-image: linear-gradient(90deg, rgba(179, 179, 179, 1) 1px, transparent 1px),
+                linear-gradient(rgba(179, 179, 179, 1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            position: absolute;
+            top: 5%;
+            bottom: 5%;
+            left: 5%;
+            right: 5%;
+            box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 1),
+                -2px -2px 20px 10px rgba(0, 0, 0, 1);
+            z-index: -1;
+        }
+
+        &::before {
+            content: '';
+            background-image: linear-gradient(90deg, rgba(0, 255, 0, 0.3) 1px, transparent 1px),
+                linear-gradient(rgba(0, 255, 0, 0.3) 1px, transparent 1px);
+            background-size: 100px 100px;
+            position: absolute;
+            top: 5%;
+            bottom: 5%;
+            left: 5%;
+            right: 5%;
+            z-index: 0;
+        }
+
+
+
+        .columna-sobre-nosotros-quienes-somos {
+            height: 40vh;
+            display: flex;
+            flex-direction: row;
+            z-index: 1;
+
+            .columna-quienes-somos-titulo {
+                width: 33%;
+                height: 37vh;
+                margin-top: 3vh;
+                margin-left: 4%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(57, 121, 161, 0.7);
+
+                .quienes-somos-titulo-caja {
+                    width: 95%;
+                    height: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(255, 255, 255, 1);
+
+                    h2 {
+                        color: rgb(0, 95, 155);
+                        -webkit-text-stroke: 0.2px rgba(255, 255, 255, 1);
+                        text-stroke: 0.2px rgba(255, 255, 255, 1);
+                        font-size: 72px;
+                        text-shadow: 2px 2px 2px rgba(75, 75, 75, 1);
+                        font-weight: bold;
+                        text-align: center;
+
+
+                    }
+                }
+            }
+
+            .columna-quienes-somos-texto {
+                width: 59%;
+                height: 37vh;
+                margin-top: 3vh;
+                margin-right: 4%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .quienes-somos-texto-caja {
+                    width: 90%;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(255, 255, 255, 1);
+                    padding: 5%;
+
+                    p {
+                        font-size: 20px;
+                        text-align: justify;
+                        line-height: 2;
+                    }
+                }
+            }
+        }
+
+        .columna-sobre-nosotros-mision-vision {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+
+            .columna-sobre-nosotros-mision {
+                width: 96%;
+                height: 47%;
+                margin-right: 4%;
+                display: flex;
+                flex-direction: row;
+                background-image: linear-gradient(90deg, rgba(0, 102, 128, 0)55%, rgba(0, 95, 155, 0.7)75%);
+
+                .mision-titulo {
+                    width: 30%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .mision-titulo-contenido {
+                        width: 100%;
+                        height: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgba(255, 255, 255, 1);
+
+                        h3 {
+                            color: rgb(0, 95, 155);
+                            -webkit-text-stroke: 0.2px rgba(255, 255, 255, 1);
+                            text-stroke: 0.2px rgba(255, 255, 255, 1);
+                            font-size: 72px;
+                            text-shadow: 2px 2px 2px rgba(75, 75, 75, 1);
+                            font-weight: bold;
+                            text-align: center;
+
+                        }
+                    }
+                }
+
+                .mision-texto {
+                    width: 50%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .mision-texto-contenido {
+                        width: 90%;
+                        height: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgba(255, 255, 255, 1);
+                        padding: 5%;
+
+                        p {
+                            font-size: 20px;
+                            text-align: justify;
+                            line-height: 2;
+                        }
+                    }
+                }
+
+                .mision-imagen {
+                    width: 20%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-end;
+
+                    .mision-imagen-contenido {
+                        width: 80%;
+                        height: 80%;
+                        background-image: url('./../../../assets/imagenes/dart-vader.png');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+
+            .columna-sobre-nosotros-vision {
+                width: 96%;
+                height: 47%;
+                margin-left: 4%;
+                display: flex;
+                flex-direction: row;
+                background-image: linear-gradient(270deg, rgba(0, 102, 128, 0)55%, rgba(0, 95, 155, 0.7)75%);
+          
+                .vision-titulo {
+                    width: 30%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+    
+                    .vision-titulo-contenido {
+                        width: 90%;
+                        height: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgba(255, 255, 255, 1);
+    
+                        h3 {
+                            color: rgb(0, 95, 155);
+                            -webkit-text-stroke: 0.2px rgba(255, 255, 255, 1);
+                            text-stroke: 0.2px rgba(255, 255, 255, 1);
+                            font-size: 72px;
+                            text-shadow: 2px 2px 2px rgba(75, 75, 75, 1);
+                            font-weight: bold;
+                            text-align: center;
+    
+    
+                        }
+                    }
+    
+                }
+    
+                .vision-texto {
+                    width: 50%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+    
+                    .vision-texto-contenido {
+                        width: 90%;
+                        height: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgba(255, 255, 255, 1);
+                        padding: 5%;
+    
+                        p {
+                            font-size: 20px;
+                            text-align: justify;
+                            line-height: 2;
+                        }
+                    }
+                }
+    
+                .vision-imagen {
+    
+                    width: 20%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+    
+                    .vision-imagen-contenido {
+                        width: 80%;
+                        height: 80%;
+                        background-image: url('./../../../assets/imagenes/dart-vader.png');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+    
+                }
+            }
+        }
+
+        
+    }
+}

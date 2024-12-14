@@ -1,0 +1,162 @@
+<app-barra-navegacion></app-barra-navegacion>
+
+<div class="container-fluid contenedor-home-landing-page">
+    <div class="row fila-home-landing-page">
+
+        <!--COLUMNA IMAGEN PRINCIPAL-->
+        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 columna-home-landing-page">
+            <div class="conte-imagen-fondo"></div>
+        </div>
+
+        <!--COLUMNA FORMULARIO-->
+        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 columna-home-formulario-contacto">
+
+            <form class="formulario-contacto" id="formulario-contacto-id" [formGroup]="prospectosFormGroup">
+                <fieldset class="formulario-contacto-fieldset-campos">
+
+                    <legend id="formulario-contacto-legend">{{nombre}}</legend>
+
+                    <input type="email" id="inputNombre" class="form-control formulario-login-input"
+                        placeholder="Ingresa tu nombre" required autofocus formControlName="nombreProspecto">
+                    <div class="formulario-login-conte-parrafo">
+                        <p class="formulario-login-parrafo">Ingresa tu nombre</p>
+                    </div>
+
+                    <input type="email" id="inputTelefono" class="form-control formulario-login-input"
+                        placeholder="Ingresa tu teléfono" required autofocus formControlName="telefonoProspecto">
+                    <div class="formulario-login-conte-parrafo">
+                        <p class="formulario-login-parrafo">Ingresa tu teléfono</p>
+                    </div>
+
+                    <input type="email" id="inputEMail" class="form-control formulario-login-input"
+                        placeholder="Ingresa tu e mail" required autofocus formControlName="emailProspecto">
+                    <div class="formulario-login-conte-parrafo">
+                        <p class="formulario-login-parrafo">Ingresa tu email</p>
+                    </div>
+
+                    <input type="email" id="contacto-mensaje-id" class="form-control formulario-contacto-mensaje-input"
+                        [placeholder]="placeholderText" required autofocus formControlName="mensajeProspecto">
+                    <div class="formulario-login-conte-parrafo">
+                        <p class="formulario-login-parrafo">Ingresa tu mensaje</p>
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="formulario-contacto-fieldset-botones">
+                    <button class="btn btn-lg btn-primary formulario-login-boton"
+                        (click)="guardarValoresFormulario()">Enviar</button>
+                </fieldset>
+
+            </form> 
+
+        </div>
+
+        <!--COLUMNA ESPACIO-->
+        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 columna-home-espacio"></div>
+
+        <!--COLUMNA PORTAFOLIO-->
+        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 columna-portafolio-cubos">
+            <div class="portafolio-cubos-titulo">
+                <h2>Portafolios</h2>
+            </div>
+            <div class="portafolio-cubos-imagenes">
+                <div #cuboizq class="cubo">
+                    <div id="cubo-cara-posterior" class="cubo-caras"></div>
+                    <div id="cubo-imagen-uno" class="cubo-caras"></div>
+                    <div class="cubos-etiqueta-caja">
+                        <div class="cubos-etiqueta">
+                            <p>Impresión en PLA</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div #cuboizq class="cubo">
+                    <div id="cubo-cara-posterior" class="cubo-caras"></div>
+                    <div id="cubo-imagen-dos" class="cubo-caras"></div>
+                    <div class="cubos-etiqueta-caja">
+                        <div class="cubos-etiqueta">
+                            <p>Impresión en ABS</p>
+                        </div>
+                    </div>
+                </div>
+                <div #cuboizq class="cubo">
+                    <div id="cubo-cara-posterior" class="cubo-caras"></div>
+                    <div id="cubo-imagen" class="cubo-caras"></div>
+                    <div class="cubos-etiqueta-caja">
+                        <div class="cubos-etiqueta">
+                            <p>Impresión en PETG</p>
+                        </div>
+                    </div>
+                </div>
+                <div #cuboder class="cubo">
+                    <div id="cubo-cara-posterior" class="cubo-caras"></div>
+                    <div id="cubo-imagen" class="cubo-caras"></div>
+                    <div class="cubos-etiqueta-caja">
+                        <div class="cubos-etiqueta">
+                            <p>Impresión en PLA</p>
+                        </div>
+                    </div>
+                </div>
+                <div #cuboder class="cubo">
+                    <div id="cubo-cara-posterior" class="cubo-caras"></div>
+                    <div id="cubo-imagen-cinco" class="cubo-caras"></div>
+                    <div class="cubos-etiqueta-caja">
+                        <div class="cubos-etiqueta">
+                            <p>Impresión en PLA</p>
+                        </div>
+                    </div>
+                </div>
+                <div #cuboder class="cubo">
+                    <div id="cubo-cara-posterior" class="cubo-caras"></div>
+                    <div id="cubo-imagen" class="cubo-caras"></div>
+                    <div class="cubos-etiqueta-caja">
+                        <div class="cubos-etiqueta">
+                            <p>Impresión en PLA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--COLUMNA OPINION CLIENTES-->
+        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 columna-opinion-clientes">
+            
+            <div class="fila-opinion-clientes-cards">
+                <div class="opinion-clientes-card">
+                    <div class="contenedor-sombra-card">
+                        <div class="card-foto">
+                            <div class="foto-circulo"></div>
+                        </div>
+                        <div class="card-descripcion"></div>
+                        <div class="card-nombre"></div>
+                        <div class="card-ocupacion"></div>
+                    </div>
+                </div>
+                <div class="opinion-clientes-card">
+                    <div class="contenedor-sombra-card">
+                        <div class="card-foto">
+                            <div class="foto-circulo"></div>
+                        </div>
+                        <div class="card-descripcion"></div>
+                        <div class="card-nombre"></div>
+                        <div class="card-ocupacion"></div>
+                    </div>
+                </div>
+                <div class="opinion-clientes-card">
+                    <div class="contenedor-sombra-card">
+                        <div class="card-foto">
+                            <div class="foto-circulo"></div>
+                        </div>
+                        <div class="card-descripcion"></div>
+                        <div class="card-nombre"></div>
+                        <div class="card-ocupacion"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tienda-online-cards {
+    width: 20vw;
+    height: 50vh;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0vh 0 0vh 0;
+
+    .tienda-online-card {
+        width: 76%;
+        height: 92%;
+
+        .tienda-online-card-imagen {
+            width: 100%;
+            height: 70%;
+
+            .card-imagen-caja{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background-color: transparent;
+                
+            }
+        }
+        
+        .tienda-online-card-nombre, 
+        .tienda-online-card-tamano,
+        .tienda-online-card-color,
+        .tienda-online-card-precio,
+        .tienda-online-card-cantidad {
+            width: 100%;
+            height: 6%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            h3{
+                font-size: 18px;
+                font-weight: bold;
+                color: rgb(0, 0, 0);
+            }
+            p{
+                font-size: 16px;
+                color: rgb(22, 22, 22);
+            }
+        }
+
+    }
+}

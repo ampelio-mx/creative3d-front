@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-tienda-online {
+
+    .fila-tienda-online {
+
+        .columna-tienda-online {
+
+            padding-left: 10%;
+            padding-right: 10%;
+            border: 1px solid salmon;
+
+            .tienda-online-titulo {
+                width: 100%;
+                height: 10vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid palevioletred;
+
+                h2 {
+                    font-size: 48px;
+                    color: rgba(0, 95, 155, 1);
+                    -webkit-text-stroke: 0.3px rgba(255, 255, 255,1);
+                    text-stroke: 0.3px rgba(255, 255, 255, 1);
+                    text-shadow: 2px 1px 3px rgba(75, 75, 75, 1);
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+
+            .fila-tienda-online-cards {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                border: 1px solid rgb(58, 250, 0);
+
+                .tienda-online-cards {
+                    width: 16.666%;
+                    height: 30vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid rgb(250, 0, 229);
+
+                    .tienda-online-card {
+                        width: 75%;
+                        height: 100%;
+                        border: 1px solid rgb(119, 112, 216);
+
+                        .tienda-online-card-imagen {
+                            width: 100%;
+                            height: 70%;
+                            border: 1px solid rgb(119, 112, 216);
+                        }
+
+                        .tienda-online-card-titulo {
+                            width: 100%;
+                            height: 15%;
+                            border: 1px solid rgb(119, 112, 216);
+
+                        }
+
+                        .tienda-online-card-precio {
+                            width: 100%;
+                            height: 15%;
+                            border: 1px solid rgb(119, 112, 216);
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

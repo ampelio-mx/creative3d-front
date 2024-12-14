@@ -1,0 +1,32 @@
+<app-barra-navegacion></app-barra-navegacion>
+
+<div class="container-fluid contenedor-tienda-online-filamentos-titulo">
+    <div class="row fila-tienda-online-filamentos-titulo">
+        <div
+            class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 columna-tienda-online-filamentos-titulo">
+            <h2>Filamentos</h2>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid contenedor-tienda-online-filamentos-cards">
+    <div class="row fila-tienda-online-filamentos-cards">
+        <div class="col-12 columna-tienda-online-filamentos-cards">
+            <app-card-tienda-online *ngFor="let productos of interfazProductos"
+                [productosRecibidos]=" productos">
+            </app-card-tienda-online>
+        </div>
+        <div class="col-12 columna-tienda-online-filamentos-cards">
+            <!--<app-card-tienda-online *ngFor="let productos of arregloProductosFilamentosABS"
+                [productosRecibidos]=" productos">
+            </app-card-tienda-online>-->
+        </div>
+        <div class="col-12 columna-tienda-online-filamentos-cards">
+            <!--<app-card-tienda-online *ngFor="let productos of arregloProductosFilamentosPETG"
+                [productosRecibidos]=" productos">
+            </app-card-tienda-online>-->
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
